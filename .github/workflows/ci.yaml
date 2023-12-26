@@ -21,7 +21,7 @@ jobs:
       - uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/magic-nix-cache-action@main
       - name: Run Build Script
-        run: nix develop .#cu -c ./scripts/ci/build.sh
+        run: nix develop .#ci -c ./scripts/ci/build.sh
 
   release:
     name: Semantic Release
