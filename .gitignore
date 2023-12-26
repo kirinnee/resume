@@ -1,0 +1,7 @@
+**/*.log
+**/*.out
+**/*.pdf
+resume.synctex.gz
+.direnv
+.pre-commit-config.yaml
+config

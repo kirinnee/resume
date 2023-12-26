@@ -1,0 +1,11 @@
+version: "3"
+
+tasks:
+  build:
+    desc: Build the resume
+    cmds:
+      - ./scripts/ci/build.sh
+  pre-commit:
+    desc: Pre-commit
+    cmds:
+      - ./scripts/ci/pre-commit.sh
