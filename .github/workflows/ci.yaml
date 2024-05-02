@@ -40,6 +40,6 @@ jobs:
         env:
           S3_HOST: "${{ secrets.S3_HOST }}"
           S3_ID: "${{ secrets.S3_ID }}"
-          S3_SECRET: "${{ secrets.SECRET }}"
+          S3_SECRET: "${{ secrets.S3_SECRET }}"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: nix develop .#releaser -c scripts/ci/release.sh
